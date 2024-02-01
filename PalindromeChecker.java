@@ -16,7 +16,7 @@ public class PalindromeChecker {
     }
 
     private static boolean isPalindrome(String str) {
-        str = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase(); // Remove non-alphanumeric characters and convert to lower case
+        str = str.replaceAll("[^a-zA-Z]", "").toLowerCase(); // Remove non-alphanumeric characters and convert to lower case
         int left = 0;
         int right = str.length() - 1;
 
